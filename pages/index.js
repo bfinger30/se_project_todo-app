@@ -22,9 +22,6 @@ const generateTodo = (data) => {
   const todo = new Todo(data, "#todo-template");
   const todoElement = todo.getView();
   return todoElement;
-
-  // todoNameEl.textContent = data.name;
-  // todoCheckboxEl.checked = data.completed;
 };
 
 addTodoButton.addEventListener("click", () => {
