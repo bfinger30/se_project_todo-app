@@ -46,10 +46,6 @@ addTodoButton.addEventListener("click", () => {
   addTodoPopup.open();
 });
 
-addTodoCloseBtn.addEventListener("click", () => {
-  closeModal(addTodoPopup);
-});
-
 const renderTodo = (item) => {
   const todo = generateTodo(item);
   todosList.append(todo);
