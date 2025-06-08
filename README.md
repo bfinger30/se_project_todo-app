@@ -1,14 +1,20 @@
 # Simple Todo App
 
-Give a brief description of the project here.
+This is The Simple ToDo App. The app allows you to set scheduled goals (or Todos) with due dates. As you complete your Todos, you can check them off or delete them from your list of Todos entirely.
 
 ## Functionality
 
-Give a more detailed explanation of the project and its functionality.
+The Simple ToDo App was created with daily tasks in mind, making it perfect for creating shopping lists, appointment reminders, and much more. You can also plan ahead weeks, months, or even years, thanks to the due date feature.
 
 ## Technology
 
-Give a description of the technologies and techniques used. Pictures, GIFs, or screenshots that detail the project features are recommended.
+- Semantic HTML5
+- Flexbox
+- Grid layout
+- @media queries
+- Exports and Imports
+- validationConfig object
+- FormValidator and Todo classes
 
 ## Deployment
 
