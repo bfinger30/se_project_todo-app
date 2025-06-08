@@ -1,4 +1,4 @@
-class FormValidator {
+export default class FormValidator {
   constructor(settings, formEl) {
     this._settings = settings;
     this._inputSelector = settings.inputSelector;
@@ -90,5 +90,3 @@ class FormValidator {
     this._setEventListeners();
   }
 }
-
-export default FormValidator;
