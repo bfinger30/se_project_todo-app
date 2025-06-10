@@ -9,7 +9,7 @@ export default class FormValidator {
     this._formEl = formEl;
   }
 
-  _showInputError(formEl, inputElement, errorMessage) {
+  _showInputError(inputElement, errorMessage) {
     const errorElementId = `#${inputElement.id}-error`;
     this._errorElement = formEl.querySelector(errorElementId);
     inputElement.classList.add(this._inputErrorClass);
@@ -17,7 +17,7 @@ export default class FormValidator {
     this._errorElement.classList.add(this._errorClass);
   }
 
-  _hideInputError(formEl, inputElement) {
+  _hideInputError(inputElement) {
     const errorElementId = `#${inputElement.id}-error`;
     this._errorElement = this._formEl.querySelector(errorElementId);
     inputElement.classList.remove(this._inputErrorClass);

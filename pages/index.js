@@ -30,6 +30,7 @@ function handleDelete(completed) {
   if (completed) {
     todoCounter.updateCompleted(false);
   }
+  todoCounter.updateTotal(false);
 }
 
 function countTotal(total) {
