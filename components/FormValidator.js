@@ -11,7 +11,7 @@ export default class FormValidator {
 
   _showInputError(inputElement, errorMessage) {
     const errorElementId = `#${inputElement.id}-error`;
-    this._errorElement = formEl.querySelector(errorElementId);
+    this._errorElement = this._formEl.querySelector(errorElementId);
     inputElement.classList.add(this._inputErrorClass);
     this._errorElement.textContent = errorMessage;
     this._errorElement.classList.add(this._errorClass);
@@ -27,7 +27,7 @@ export default class FormValidator {
 
   _checkInputValidity(inputElement) {
     if (!inputElement.validity.valid) {
-      this._showInputError(inputElement);
+      this._showInputError(inputElement, inputElement.validationMessage);
     } else {
       this._hideInputError(inputElement);
     }

@@ -1,17 +1,15 @@
 export default class Todo {
-  constructor(data, selector, handleCheck, handleDelete, countTotal) {
+  constructor(data, selector, handleCheck, handleDelete) {
     this._data = data;
     this._templateElement = document.querySelector(selector);
     this._handleCheck = handleCheck;
     this._handleDelete = handleDelete;
-    this._countTotal = countTotal;
   }
 
   _setEventListeners() {
     this._todoDeleteBtn.addEventListener("click", () => {
       this._remove();
       this._handleDelete(this._data.completed);
-      this._countTotal(this._data.total);
     });
     this._todoCheckboxEl.addEventListener("change", () => {
       this._toggleCompletion();
